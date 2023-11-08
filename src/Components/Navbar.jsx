@@ -9,9 +9,10 @@ const Navbar = () => {
   ]
   return (
     <>
-    <div className=' bg-[#000000] text-white flex w-full p-3.5 justify-between flex-wrap'>
+    <div className=' bg-[#000000] text-white flex w-full p-3.5 justify-between flex-wrap  border-white '>
       <span className=' text-2xl'>FreeGame.in</span>
-      <div className=' justify-center'>  
+      <div className=' justify-center '>  
+      
           <input
             type="search"
             name=""

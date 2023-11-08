@@ -5,7 +5,6 @@ import axios from 'axios';
 
 function App() {
   const [game,setGame] = useState([]);
-  
   useEffect(() => {
     const getData = async() => {
       const options = {
@@ -13,7 +12,8 @@ function App() {
         url: 'https://free-to-play-games-database.p.rapidapi.com/api/filter',
         params: {
           tag: '3d.mmorpg.fantasy.pvp',
-          platform: 'pc'
+          platform: 'pc',
+          
         },
         headers: {
           'X-RapidAPI-Key': '658f5b8a7dmsh8ef18cf53673e22p14bf79jsn91d91ab012df',
@@ -23,7 +23,7 @@ function App() {
       try {
         const response = await axios.request(options);
         setGame(response.data);
-        console.log(response.data);
+        
       } catch (error) {
         console.error(error);
       }
