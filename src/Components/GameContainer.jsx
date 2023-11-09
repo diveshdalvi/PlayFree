@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 const GameList = ({games}) => {
-  const openGameSite = (site) => {
-    window.open(site, "_blank");
-  }
+  
   return (
     <div className='flex flex-wrap'>
         {games.map((game) => (
@@ -13,11 +11,11 @@ const GameList = ({games}) => {
 
             <p className='text-sm text-gray-400 mb-2'>{game.short_description}</p>
             <div className='mb-2 text-md'>
-            <span>Publisher: {game.publisher}</span>
+            <div className=' text-lg'><a href= {game.freetogame_profile_url}>{game.publisher}</a></div>
             </div>
             <div  className='text-xs flex justify-between'>
               <span >Genere: {game.genre}</span>
-              <span>Release Date: {game.release_date}</span>
+              <span>Release Date:  {game.release_date}</span>
             </div>
             </div>
         </div>
