@@ -27,13 +27,13 @@ const Navbar = ({ onSearchChange , onSortChange}) => {
     <div className=' bg-[#000000] text-white flex w-full p-4 justify-between flex-wrap  border-white '>
       <span className=' text-2xl'>FreeGame.in</span>
       <div>  
-          <input
+          {/* <input
             type="search"
             name=""
             onChange={handleChange}
             id="search-bar"
             placeholder='Search Games'
-            className='bg-[#03001C] border-2 border-[#0B2447] rounded-lg p-1'/>
+            className='bg-[#03001C] border-2 border-[#0B2447] rounded-lg p-1'/> */}
             </div>
           <Select options={sortOption} className='text-gray-500 bg-[#03001C]' onChange={handleSortChange} placeholder='Sort Games' searchable = {false} color='#0B2447'></Select>
           

@@ -20,9 +20,8 @@ function App() {
     const getData = async(searchQuery , sort_method) => {
       const options = {
         method: 'GET',
-        url: 'https://free-to-play-games-database.p.rapidapi.com/api/filter',
+        url: 'https://free-to-play-games-database.p.rapidapi.com/api/games',
         params: {
-          tag: '3d.mmorpg.fantasy.pvp',
           'sort-by': sort_method
         },
         headers: {
