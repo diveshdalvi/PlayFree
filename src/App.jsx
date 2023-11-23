@@ -25,7 +25,7 @@ function App() {
           'sort-by': sort_method
         },
         headers: {
-          'X-RapidAPI-Key': '658f5b8a7dmsh8ef18cf53673e22p14bf79jsn91d91ab012df',
+          'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
           'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
         }
       };
